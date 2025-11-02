@@ -1,0 +1,104 @@
+/* General Page Layout */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #2b2d42;
+  margin-bottom: 25px;
+}
+
+/* Expense Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0077ff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #005ecc;
+}
+
+/* Expense List */
+.expense-list {
+  margin-top: 30px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #f9fafc;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #0077ff;
+  transition: all 0.3s ease;
+}
+
+.expense-item:hover {
+  background: #eef4ff;
+}
+
+.expense-item span {
+  font-weight: 500;
+}
+
+/* Expense Summary */
+.summary {
+  margin-top: 25px;
+  text-align: center;
+  padding: 15px;
+  background: #f0f4ff;
+  border-radius: 8px;
+}
+
+.summary h3 {
+  color: #0077ff;
+  margin-bottom: 5px;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #e63b3b;
+}
