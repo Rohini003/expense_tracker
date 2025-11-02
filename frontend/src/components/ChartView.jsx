@@ -10,7 +10,7 @@ export default function ChartView({ data }) {
     <div style={{ height: 240 }}>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
-          <Pie dataKey="value" data={data} outerRadius={80} label>
+          <Pie dataKey="value" data={data} outerRadius={80} label  style={{ outline: 'none' }} >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
