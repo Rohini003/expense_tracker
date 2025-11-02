@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_BASE = import.meta.env.VITE_API_BASE || 'https://expense-tracker-backend-cz3n.onrender.com/';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://expense-tracker-backend-cz3n.onrender.com/api';
 
 export const fetchTransactionsApi = (params) =>
   axios.get(`${API_BASE}/transactions`, { params }).then(res => res.data);
